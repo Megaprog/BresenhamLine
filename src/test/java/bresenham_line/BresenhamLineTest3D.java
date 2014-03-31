@@ -42,6 +42,7 @@ public class BresenhamLineTest3D {
 
         final int[] first = points[0];
         final int[] last = points[points.length - 1];
+
         processor3D.processLine3D(first[0], first[1], first[2], last[0], last[1], last[2], new PointHandler3D<Void>() {
             @Override
             public Void handlePoint(int x, int y, int z) {
@@ -49,6 +50,9 @@ public class BresenhamLineTest3D {
                 assertEquals(point[0], x);
                 assertEquals(point[1], y);
                 assertEquals(point[2], z);
+
+                System.out.println("x=" + x + ", y=" + y + ", z=" + z);
+
                 return null;
             }
         });

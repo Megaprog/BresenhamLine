@@ -48,6 +48,7 @@ public class BresenhamLineTest {
 
         final int[] first = points[0];
         final int[] last = points[points.length - 1];
+
         processor2D.processLine2D(first[0], first[1], last[0], last[1], new PointHandler2D<Void>() {
             @Override
             public Void handlePoint(int x, int y) {
@@ -67,6 +68,7 @@ public class BresenhamLineTest {
 
         final int[] first = points[0];
         final int[] last = points[points.length - 1];
+
         processor3D.processLine3D(first[0], first[1], 0, last[0], last[1], 0, new PointHandler3D<Void>() {
             @Override
             public Void handlePoint(int x, int y, int z) {
@@ -87,6 +89,7 @@ public class BresenhamLineTest {
 
         final int[] first = points[0];
         final int[] last = points[points.length - 1];
+
         processor3D.processLine3D(0, first[0], first[1], 0, last[0], last[1], new PointHandler3D<Void>() {
             @Override
             public Void handlePoint(int x, int y, int z) {
@@ -107,6 +110,7 @@ public class BresenhamLineTest {
 
         final int[] first = points[0];
         final int[] last = points[points.length - 1];
+
         processor3D.processLine3D(first[0], 0, first[1], last[0], 0, last[1], new PointHandler3D<Void>() {
             @Override
             public Void handlePoint(int x, int y, int z) {
