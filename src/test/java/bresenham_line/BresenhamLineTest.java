@@ -34,6 +34,7 @@ public class BresenhamLineTest {
 
 
     private LineProcessor2D processor2D = new BresenhamLine();
+    private LineProcessor3D processor3D = new BresenhamLine();
 
     private int[][] points;
 
@@ -53,6 +54,66 @@ public class BresenhamLineTest {
                 int[] point = points[index[0]++];
                 assertEquals(point[0], x);
                 assertEquals(point[1], y);
+                return null;
+            }
+        });
+
+        assertEquals(points.length, index[0]);
+    }
+
+    @Test
+    public void testProcessLine3Das2Dz() throws Exception {
+        final int[] index = {0};
+
+        final int[] first = points[0];
+        final int[] last = points[points.length - 1];
+        processor3D.processLine3D(first[0], first[1], 0, last[0], last[1], 0, new PointHandler3D<Void>() {
+            @Override
+            public Void handlePoint(int x, int y, int z) {
+                int[] point = points[index[0]++];
+                assertEquals(point[0], x);
+                assertEquals(point[1], y);
+                assertEquals(0, z);
+                return null;
+            }
+        });
+
+        assertEquals(points.length, index[0]);
+    }
+
+    @Test
+    public void testProcessLine3Das2Dx() throws Exception {
+        final int[] index = {0};
+
+        final int[] first = points[0];
+        final int[] last = points[points.length - 1];
+        processor3D.processLine3D(0, first[0], first[1], 0, last[0], last[1], new PointHandler3D<Void>() {
+            @Override
+            public Void handlePoint(int x, int y, int z) {
+                int[] point = points[index[0]++];
+                assertEquals(point[0], y);
+                assertEquals(point[1], z);
+                assertEquals(0, x);
+                return null;
+            }
+        });
+
+        assertEquals(points.length, index[0]);
+    }
+
+    @Test
+    public void testProcessLine3Das2Dy() throws Exception {
+        final int[] index = {0};
+
+        final int[] first = points[0];
+        final int[] last = points[points.length - 1];
+        processor3D.processLine3D(first[0], 0, first[1], last[0], 0, last[1], new PointHandler3D<Void>() {
+            @Override
+            public Void handlePoint(int x, int y, int z) {
+                int[] point = points[index[0]++];
+                assertEquals(point[0], x);
+                assertEquals(point[1], z);
+                assertEquals(0, y);
                 return null;
             }
         });

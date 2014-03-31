@@ -9,11 +9,11 @@ package bresenham_line;
  * @param <V> return value type
  * @author Tomas
  */
-public interface PointHandler2D<V> {
+public interface PointHandler3D<V> {
 
     /**
-     * Handle a 2D point
+     * Handle a 3D point
      * @return if returns null the process will continue, if something not null process will stop.
      */
-    V handlePoint(int x, int y);
+    V handlePoint(int x, int y, int z);
 }
