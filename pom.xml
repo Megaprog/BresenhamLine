@@ -7,7 +7,7 @@
     <version>1.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>Iterators</name>
+    <name>BresenhamLine</name>
     <description>Bresenham’s line drawing algorithm implementation in 2D and 3D dimensions</description>
     <url>https://github.com/Megaprog/BresenhamLine</url>
 
