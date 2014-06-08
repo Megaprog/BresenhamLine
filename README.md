@@ -3,7 +3,22 @@ BresenhamLine
 
 Bresenham’s line drawing algorithm implementation in 2D and 3D dimensions.
 
-## Using:
+## How to get it?
+
+You can download the latest build at:
+    https://github.com/Megaprog/BresenhamLine/releases
+
+Or use it as a maven dependency:
+
+```xml
+<dependency>
+    <groupId>org.jmmo</groupId>
+    <artifactId>bresenham-line</artifactId>
+    <version>1.0</version>
+</dependency>
+```
+
+## How to use it?
 
     import bresenham_line.BresenhamLine;
     import bresenham_line.PointHandler3D;
