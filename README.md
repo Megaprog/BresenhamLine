@@ -3,7 +3,7 @@ BresenhamLine
 
 Bresenham’s line drawing algorithm implementation in 2D and 3D dimensions.
 
-Using:
+## Using:
 
     import bresenham_line.BresenhamLine;
     import bresenham_line.PointHandler3D;
@@ -21,7 +21,7 @@ Using:
         }
     }
 
-Output:
+The output is:
 
 x=1, y=9, z=8<br/>
 x=2, y=9, z=9<br/>

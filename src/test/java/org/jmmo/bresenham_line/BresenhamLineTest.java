@@ -1,4 +1,4 @@
-package bresenham_line;
+package org.jmmo.bresenham_line;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

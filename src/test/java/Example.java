@@ -1,5 +1,5 @@
-import bresenham_line.BresenhamLine;
-import bresenham_line.PointHandler3D;
+import org.jmmo.bresenham_line.BresenhamLine;
+import org.jmmo.bresenham_line.PointHandler3D;
 
 /**
  * User: Tomas
