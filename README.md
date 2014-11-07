@@ -20,8 +20,8 @@ Or use it as a maven dependency:
 
 ## How to use it?
 
-    import bresenham_line.BresenhamLine;
-    import bresenham_line.PointHandler3D;
+    import org.jmmo.bresenham_line.BresenhamLine;
+    import org.jmmo.bresenham_line.PointHandler3D;
 
     public class Example {
 
